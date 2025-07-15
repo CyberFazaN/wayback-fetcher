@@ -1,0 +1,310 @@
+# Russian translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-15 18:29+0300\n"
+"PO-Revision-Date: 2025-07-15 18:34+0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.6\n"
+
+#: wayback_fetcher.py:94
+#, python-brace-format
+msgid "Must be a valid domain: {domain}"
+msgstr "Ожидался корректный домен: {domain}"
+
+#: wayback_fetcher.py:137
+msgid "Must be an integer"
+msgstr "Ожидалось целое число"
+
+#: wayback_fetcher.py:139
+#, python-brace-format
+msgid "Value must be between {minimum} and {maximum}"
+msgstr "Значение должно быть между {minimum} и {maximum}"
+
+#: wayback_fetcher.py:164
+msgid ""
+"Download files from WayBack Machine archive for a given domain with optional "
+"filtration."
+msgstr ""
+"Загрузка файлов из веб-архива WayBack Machine по домену с дополнительной "
+"фильтрацией."
+
+#: wayback_fetcher.py:167
+msgid "Main options"
+msgstr "Основные опции"
+
+#: wayback_fetcher.py:170
+msgid "Target domain (e.g. example.com)."
+msgstr "Целевой домен (к примеру, example.com)."
+
+#: wayback_fetcher.py:174
+msgid "Max records to fetch from API."
+msgstr "Лимит загрузки записей индекса."
+
+#: wayback_fetcher.py:178
+msgid "Use HTTP instead of HTTPS for WayBack connection."
+msgstr "Использовать HTTP вместо HTTPS для запросов к WayBack Machine."
+
+#: wayback_fetcher.py:182
+#, python-brace-format
+msgid "Output folder. Default: {default_output}"
+msgstr "Путь к папке для сохранения данных. По-умолчанию: {default_output}"
+
+#: wayback_fetcher.py:186
+msgid "Output format. Both means CSV+JSON."
+msgstr "Формат сохранения метаданных. Both означает CSV+JSON."
+
+#: wayback_fetcher.py:190
+msgid "Verbose mode."
+msgstr "Режим вывода отладочной информации."
+
+#: wayback_fetcher.py:193
+msgid "Filtering options"
+msgstr "Опции фильтрации"
+
+#: wayback_fetcher.py:196
+msgid "Comma-separated list of extensions."
+msgstr "Расширения файлов для фильтрации загрузок, разделение через запятую."
+
+#: wayback_fetcher.py:200
+msgid "Comma-separated list of mimetypes."
+msgstr "MIME-типы файлов для фильтрации загрузок, разделение через запятую."
+
+#: wayback_fetcher.py:204
+msgid "Regular expression for filtering file by their URL-paths."
+msgstr "Регулярное выражение для фильтрации загрузок по их URL-путям."
+
+#: wayback_fetcher.py:208
+msgid "Comma-separated list of HTTP status codes for archive filter."
+msgstr "HTTP-коды ответа для фильтрации индекса, разделение через запятую."
+
+#: wayback_fetcher.py:211
+msgid "Download options"
+msgstr "Опции загрузок"
+
+#: wayback_fetcher.py:214
+msgid "Download all matching files. Alias for -dfl -dc."
+msgstr "Загружать все соответствующие файлы. Аналог -dfl -dc."
+
+#: wayback_fetcher.py:218
+msgid "Download first archived file."
+msgstr "Загружать первые файлы из веб-архива."
+
+#: wayback_fetcher.py:222
+msgid "Download last archived file."
+msgstr "Загружать последние файлы из веб-архива."
+
+#: wayback_fetcher.py:226
+msgid "Download both first and last archived files."
+msgstr "Загружать первые и последние файлы из веб-архива. Аналог -df -dl."
+
+#: wayback_fetcher.py:230
+msgid "Download current version of file from origin."
+msgstr "Загружать текущие версии файлов с оригинального сайта."
+
+#: wayback_fetcher.py:234
+msgid "Save files in a structured way."
+msgstr "Сохранять структуру веб-сайта при загрузке файлов."
+
+#: wayback_fetcher.py:238
+msgid "Threads for downloading (1–64)."
+msgstr "Количество потоков на загрузку (1-64)."
+
+#: wayback_fetcher.py:242
+msgid "Timeout for all downloads. Alias for -dtw x -dto x."
+msgstr "Таймаут для всех загрузок. Аналог -dtw x -dto x."
+
+#: wayback_fetcher.py:246
+msgid "Timeout for wayback downloads."
+msgstr "Таймаут для загрузок из веб-архива."
+
+#: wayback_fetcher.py:250
+msgid "Timeout for origin downloads."
+msgstr "Таймаут для загрузок с оригинального сайта."
+
+#: wayback_fetcher.py:254
+msgid "Number of retries for failed downloads."
+msgstr "Количество повторных попыток загрузки при возникновении ошибок."
+
+#: wayback_fetcher.py:258
+msgid "Delay between retries (seconds)."
+msgstr "Период задержки между повторными попытками загрузки (секунды)."
+
+#: wayback_fetcher.py:262
+msgid "Deduplicate downloaded files (the latest copy will survive)."
+msgstr ""
+"Найти и удалить дубликаты загруженных файлов (сохраняет самые последние "
+"копии)."
+
+#: wayback_fetcher.py:265
+msgid "Localization"
+msgstr "Локализация"
+
+#: wayback_fetcher.py:268
+msgid "Force Russian output."
+msgstr "Использовать русский язык."
+
+#: wayback_fetcher.py:272
+msgid "Force English output."
+msgstr "Force English output."
+
+#: wayback_fetcher.py:281
+msgid "Domain is required."
+msgstr "Необходимо указать домен."
+
+#: wayback_fetcher.py:326
+msgid "Fetching archive index..."
+msgstr "Получение индекса веб-архива..."
+
+#: wayback_fetcher.py:331
+#, python-brace-format
+msgid "Error while fetching archive index ({exception})"
+msgstr "Не удалось получить индекс веб-архива ({exception})"
+
+#: wayback_fetcher.py:456
+#, python-brace-format
+msgid "Deleting: {filepath}"
+msgstr "Удаление: {filepath}"
+
+#: wayback_fetcher.py:495
+#, python-brace-format
+msgid "File {latest} has {duplicates_count} duplicates: {duplicates}"
+msgstr "Файл {latest} имеет {duplicates_count} дубликат(-а/-ов): {duplicates}"
+
+#: wayback_fetcher.py:527
+#, python-brace-format
+msgid "Saved: {url} -> {filepath}"
+msgstr "Сохранено: {url} -> {filepath}"
+
+#: wayback_fetcher.py:532
+#, python-brace-format
+msgid "Error while downloading {url} ({exception})"
+msgstr "Ошибка при загрузке {url} ({exception})"
+
+#: wayback_fetcher.py:534
+#, python-brace-format
+msgid "Error ({exception}) while downloading {url}, retrying"
+msgstr "Ошибка ({exception}) при загрузке {url}, пробую снова"
+
+#: wayback_fetcher.py:549
+#, python-brace-format
+msgid "Output saved to {output_folder}"
+msgstr "Данные сохранены в {output_folder}"
+
+#: wayback_fetcher.py:551
+msgid "Nothing to save."
+msgstr "Нет данных для сохранения."
+
+#: wayback_fetcher.py:552
+msgid "WayBack File Fetcher finished."
+msgstr "WayBack File Fetcher завершил работу."
+
+#: wayback_fetcher.py:571
+msgid "Author: FazaN (https://t.me/CyberFazaN)"
+msgstr "Автор: FazaN (https://t.me/CyberFazaN)"
+
+#: wayback_fetcher.py:572
+#, python-brace-format
+msgid "Using language: {lang_code}"
+msgstr "Используется локаль: {lang_code}"
+
+#: wayback_fetcher.py:573
+#, python-brace-format
+msgid "Given arguments: {args}"
+msgstr "Полученные аргументы: {args}"
+
+#: wayback_fetcher.py:577
+msgid "WayBack Machine returned empty result. Probably, the archive is empty."
+msgstr ""
+"WayBack Machine вернул пустой ответ. Возможно, данный сайт ещё не "
+"архивировался."
+
+#: wayback_fetcher.py:588
+msgid "Index fetched! Summary:"
+msgstr "Индекс архива загружен. Сводка:"
+
+#: wayback_fetcher.py:589
+#, python-brace-format
+msgid "Total: {total}, Targets: {targets}, With multiple versions: {multiple}"
+msgstr "Всего: {total}, Целевых: {targets}, С разными версиями: {multiple}"
+
+#: wayback_fetcher.py:593
+msgid "Nothing to download: no target records found."
+msgstr ""
+"Не наййдено ни одного файла, соответствующего условиям фильтрации. Загрузка "
+"пропущена."
+
+#: wayback_fetcher.py:596
+msgid ""
+"No filtering applied. This will download whole archive. It may take a long "
+"time."
+msgstr ""
+"Не применены правила фильтрации. Будет загружен весь архив. Это может занять "
+"какое-то время."
+
+#: wayback_fetcher.py:597
+msgid "Do you want to continue?"
+msgstr "Желаете продолжить?"
+
+#: wayback_fetcher.py:597
+msgid "(y/N)"
+msgstr "(д/Н)"
+
+#: wayback_fetcher.py:599
+msgid "Aborted."
+msgstr "Исполнение программы прервано."
+
+#: wayback_fetcher.py:620
+#, python-brace-format
+msgid "Start downloading desired files ({files_count})..."
+msgstr "Начало загрузки выбранных файлов ({files_count})..."
+
+#: wayback_fetcher.py:622
+msgid ""
+"Note that quantity of files to download is higher than quantity of target "
+"records.\n"
+"This is normal as we will download multiple versions of these files.\n"
+msgstr ""
+"Обратите внимание, что количество файлов для загрузки превышает количество "
+"целевых записей.\n"
+"Это нормально, так как мы будем загружать несколько версий этих файлов.\n"
+
+#: wayback_fetcher.py:634
+msgid "Download complete."
+msgstr "Загрузка завершена."
+
+#: wayback_fetcher.py:635
+#, python-brace-format
+msgid "Successfully downloaded {successful_count} files."
+msgstr "Успешно загружено: {successful_count} файл(-а/-ов)."
+
+#: wayback_fetcher.py:636
+#, python-brace-format
+msgid "Failed to download {unsuccessful_count} files."
+msgstr "Не удалось загрузить {unsuccessful_count} файл(-а/-ов)."
+
+#: wayback_fetcher.py:641
+#, python-brace-format
+msgid "Searching for duplicates in downloaded files ({files_count})..."
+msgstr "Поиск дубликатов в загруженных файлах ({files_count})..."
+
+#: wayback_fetcher.py:643
+#, python-brace-format
+msgid "Found {duplicates_count} duplicates. Deleting..."
+msgstr "Обнаружено {duplicates_count} дубликат(-а/-ов). Удаление..."
+
+#: wayback_fetcher.py:645
+msgid "Deduplication complete."
+msgstr "Удаление дубликатов завершено."

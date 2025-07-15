@@ -1,0 +1,2 @@
+- Separate threads for downloading from webarchive with threads for downloading from origin website;
+- Add an option to search for and download all different versions of files from the web archive (not just the first or last copy);

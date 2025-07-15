@@ -1,0 +1,21 @@
+[project]
+name = "wayback-fetcher"
+version = "0.1.0"
+description = "CLI tool for discovering and downloading files from the WayBack Machine archive."
+authors = [
+    {name = "FazaN CyberSec",email = "fazan@nullbyte.pro"}
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx (>=0.28.1,<0.29.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+wayback-fetcher = "wayback_fetcher:main"
